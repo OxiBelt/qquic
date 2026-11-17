@@ -1,0 +1,30 @@
+# Local agent/session state
+/.agents/*
+!/.agents/skills/
+/.agents/skills/*
+!/.agents/skills/subagent-delegation/
+/.codex/
+/.aws/
+
+# Build and interpreter artifacts
+target/
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+
+# Disposable test output and local credentials
+.tmp/
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local Claude preferences and worktrees
+/CLAUDE.local.md
+/.claude/settings.local.json
+/.claude/worktrees/
